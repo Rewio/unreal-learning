@@ -1,0 +1,17 @@
+
+########################################
+# UNREAL GENERATED DIRECTORIES 
+########################################
+
+*/*/Binaries
+*/*/Build
+*/*/DerivedDataCache
+*/*/Intermediate
+*/*/Saved
+*/*/Content/StarterContent/
+
+########################################
+# VISUAL STUDIO GENERATED FILES
+########################################
+
+*.VC.db
