@@ -27,14 +27,16 @@ public:
 
 private:
 
-	UPROPERTY(EditAnywhere)
-	float OpenAngle = 90.f;
+	UPROPERTY(EditAnywhere) float OpenAngle = 90.f;
+	UPROPERTY(EditAnywhere) ATriggerVolume* PressurePlate;
+	UPROPERTY(EditAnywhere) float DoorCloseDelay = 1.f;
 
-	UPROPERTY(EditAnywhere)
-	ATriggerVolume* PressurePlate;
-
+	AActor* Owner;
 	AActor* ActorThatOpens;
 
-	void OpenDoor();
+	float LastDoorOpenTime;
+
+	void OpenDoor() const;
+	void CloseDoor() const;
 	
 };
