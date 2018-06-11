@@ -32,11 +32,13 @@ private:
 	UPROPERTY(EditAnywhere) float DoorCloseDelay = 1.f;
 
 	AActor* Owner;
-	AActor* ActorThatOpens;
 
 	float LastDoorOpenTime;
 
 	void OpenDoor() const;
 	void CloseDoor() const;
-	
+
+	// returns total mass in kg's
+	float GetTotalMassOfActorsOnPlate();
+
 };
